@@ -26,7 +26,7 @@ const Nav = () => {
 
         <div className='mid_header'>
             <div className='logo'>
-                <img src='images/logo_webp2.jpg' alt='logo'/>
+                <img src='images/logo_webp.jpg' alt='logo'/>
             </div>
             <div className='search_box'>
                 <input type='text' value="" placeholder='search'></input>
@@ -79,9 +79,7 @@ const Nav = () => {
                         </div>
                        
                         </>
-
                         :
-
                         <>
                         <div className='icon'>
                             <FaUserCircle />
@@ -89,8 +87,7 @@ const Nav = () => {
                         <div className='info'>
                             <p>Please Login</p>
                         </div>
-                        </>
-                        
+                        </>  
                     }
                 </div>
 
@@ -103,9 +100,11 @@ const Nav = () => {
                             <li><Link to='/contact' className='link'>Contact</Link></li>
                         </ul>
                     </div>
+
                     <div className='offer'>
                         <p>flat 10% on all items</p>
                     </div>
+
             </div>
 
     </div>
