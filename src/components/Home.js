@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
 import Homeproduct from './Homeproduct'
-import { FaEye,FaHeart } from "react-icons/fa";
+import { FaEye,FaHeart, FaFacebook ,FaTwitter , FaInstagram ,FaYoutube} from "react-icons/fa";
+// import {  } from "react-icons/fa";
 
 const Home = () => {
   const[trendingProduct , setTrendingProduct] = useState(Homeproduct)
@@ -78,7 +79,7 @@ const Home = () => {
             </div>
 
             <div className='right_box'>
-             <div className='container'>
+             <div className='right_container'>
               <div className='testimonial'>
                 <div className='head'>
                   <h3>our trstimonial</h3>
@@ -87,8 +88,37 @@ const Home = () => {
                   <div className='img_box'>
                     <img src='images/indexlogo.png' alt='testimonial'></img>
                   </div>
+                  <div className='info'>
+                    <h3>Bodybuilder</h3>
+                    <h4>Gym and Home Workout</h4>
+                    <p>Build muscle, increase endurance, and enhance overall fitness with targeted strength exercises.</p>
+                  </div>
                 </div>
               </div>
+                <div className='newsletter'>
+                  <div className='head'>
+                    <h3>newsletter</h3>
+                  </div>
+                  <div className='form'>
+                    <p>join our mailing list</p>
+                    <input type='email' placeholder='E-mail' autoComplete='off'></input>
+                    <button>subscribe</button>
+                    <div className='icon_box'>
+                      <div className='icon'>
+                        <FaFacebook />
+                      </div>
+                      <div className='icon'>
+                        <FaTwitter />
+                      </div>
+                      <div className='icon'>
+                        <FaInstagram />
+                      </div>
+                      <div className='icon'>
+                        <FaYoutube />
+                      </div>
+                    </div>
+                  </div>
+                </div>
              </div>
             </div>
           </div>

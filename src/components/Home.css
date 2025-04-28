@@ -126,9 +126,9 @@
 }
 
 .home .trending .container .left_box .products .container   .box {
-    width: 200px;
-    height: 310px;
-    padding: 10px 10px;
+    width: 195px;
+    height: 300px;
+    padding: 5px 5px;
     border: 4px solid #f6f7f8;
     margin-top: 20px;
     margin-left: 20px;
@@ -174,7 +174,7 @@
 }
 
 .home .trending .container .left_box .products .container .box .info {
-    margin: 10px;
+    margin: 5px;
     padding: 10px 10px;
 }
 
@@ -214,3 +214,75 @@
     color: #f6f7f8;
 }
 
+.home .trending .container .right_box {
+    width: 24%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .trending .container .right_box .right_container {
+    max-width: 100%;
+}
+
+.home .trending .container .right_box .right_container .testimonial {
+    width: 100%;
+    border: 4px solid #f6f7f8;
+}
+
+.home .trending .container .right_box .right_container .testimonial .head {
+    padding: 10px 10px;
+    width: 100%;
+    background: #f6f7f8;
+}
+
+.home .trending .container .right_box .right_container .testimonial .head h3 {
+    text-align: center;
+    color: #232323;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.home .trending .container .right_box .right_container .testimonial .detail {
+    padding: 10px 20px;
+}
+
+.home .trending .container .right_box .right_container .testimonial .detail .img_box img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.home .trending .container .right_box .right_container .testimonial .detail .info h3{
+    text-align: center;
+    color: #232323;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.home .trending .container .right_box .right_container .testimonial .detail .info h4{
+    text-align: center;
+    margin-top: 10px;
+    color: #cd1e76;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.home .trending .container .right_box .right_container .testimonial .detail .info p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #232323;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.home .trending .container .right_box .right_container .newsletter {
+    width: 100%;
+    background: #f6f7f8;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
