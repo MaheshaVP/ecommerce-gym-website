@@ -22,7 +22,7 @@ const Homeproduct =
         price : '40,000',
         image : 'images/product3.jpg',
         cat : '',
-        type : 'topselling',
+        type : 'top',
     },
     {
         id : 4,
@@ -46,7 +46,7 @@ const Homeproduct =
         price : '1,000',
         image : 'images/product6.jpg',
         cat : '',
-        type : 'topselling',
+        type : 'top',
     },
     {
         id : 7,
@@ -66,11 +66,35 @@ const Homeproduct =
     },
     {
         id : 9,
-        Name : 'Product8',
+        Name : 'Product9',
+        price : '35,000',
+        image : 'images/product9.jpg',
+        cat : '',
+        type : 'top',
+    },
+    {
+        id : 10,
+        Name : 'Product10',
+        price : '35,000',
+        image : 'images/product10.jpg',
+        cat : '',
+        type : 'new',
+    },
+    {
+        id : 11,
+        Name : 'Product11',
+        price : '35,000',
+        image : 'images/product11.jpg',
+        cat : '',
+        type : 'featured',
+    },
+    {
+        id : 12,
+        Name : 'Product12',
         price : '35,000',
         image : 'images/product12.jpg',
         cat : '',
-        type : 'featured',
+        type : 'top',
     },
 ]
 

@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
 import Homeproduct from './Homeproduct'
-import { FaEye,FaHeart, FaFacebook ,FaTwitter , FaInstagram ,FaYoutube} from "react-icons/fa";
+import { FaEye,FaHeart, FaFacebook ,FaTwitter , FaInstagram ,FaYoutube,FaShoppingCart} from "react-icons/fa";
 // import {  } from "react-icons/fa";
 
 const Home = () => {
+  //product category
+  const[newProduct , setNewProduct] = useState([])
+  const[featuredProduct , setFeaturedProduct] = useState([])
+  const[topProduct , setTopProduct] = useState([])
+
+  //Trending product
   const[trendingProduct , setTrendingProduct] = useState(Homeproduct)
 
   //filter of trending product
@@ -19,6 +25,31 @@ const Home = () => {
   //All trending Product
   const allTrendingProduct = () => {
     setTrendingProduct(Homeproduct)
+  }
+
+  //product type
+  useEffect(()=> {
+    productcategory()
+  },[])
+
+  const productcategory = () => {
+    //New Product
+    const newcategory = Homeproduct.filter((x) => {
+      return x.type === 'new'
+    })
+    setNewProduct(newcategory)
+
+    //featured Product
+    const featuredcategory = Homeproduct.filter((x) => {
+      return x.type === 'featured'
+    })
+    setFeaturedProduct(featuredcategory)
+
+    //top product
+    const topcategory = Homeproduct.filter((x) => {
+      return x.type === 'top'
+    })
+    setTopProduct(topcategory)
   }
 
   return (
@@ -43,7 +74,7 @@ const Home = () => {
                 <div className='category'>
                   <h3 onClick={()=> filtercategory ('new')}>New</h3>
                   <h3 onClick={()=> filtercategory ('featured')}>Featured</h3>
-                  <h3 onClick={()=> filtercategory ('topselling')}>Top Selling</h3>
+                  <h3 onClick={()=> filtercategory ('top')}>Top Selling</h3>
                 </div>
               </div>
               <div className='products'>  
@@ -75,6 +106,7 @@ const Home = () => {
                     })
                   }
                 </div>
+                <button>Show More</button>
               </div>
             </div>
 
@@ -82,7 +114,7 @@ const Home = () => {
              <div className='right_container'>
               <div className='testimonial'>
                 <div className='head'>
-                  <h3>our trstimonial</h3>
+                  <h3>Our Testimonial</h3>
                 </div>
                 <div className='detail'>
                   <div className='img_box'>
@@ -97,12 +129,12 @@ const Home = () => {
               </div>
                 <div className='newsletter'>
                   <div className='head'>
-                    <h3>newsletter</h3>
+                    <h3>Newsletter</h3>
                   </div>
                   <div className='form'>
                     <p>join our mailing list</p>
                     <input type='email' placeholder='E-mail' autoComplete='off'></input>
-                    <button>subscribe</button>
+                    <button type='submit'>Subscribe</button>
                     <div className='icon_box'>
                       <div className='icon'>
                         <FaFacebook />
@@ -121,6 +153,117 @@ const Home = () => {
                 </div>
              </div>
             </div>
+          </div>
+        </div>
+
+        <div className='banners'>
+          <div className='container'>
+            <div className='left_box'>
+              <div className='box'>
+                <img src='images/multiple-home-banner11.jpg' alt='banner'></img>
+              </div>
+              <div className='box'>
+                <img src='images/multiple-home-banner2.jpg' alt='banner'height={360}></img>
+              </div>
+            </div>
+            <div className='right_box'>
+              <div className='top'>
+                <img src='images/multiple-home-banner3.jpg' alt='' width={450} height={200}></img>
+                <img src='images/multiple-home-banner4.jpg' alt=''width={340} height={200}></img>
+              </div>
+              <div className='bottom'>
+                <img src='images/multiple-home-banner5.jpg' alt=''></img>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='product_type'>
+          <div className='container'>
+            <div className='box'> 
+              <div className='header'>
+                <h2>New Product</h2>
+              </div>
+              {
+                newProduct.map((curElm) => {
+                  return (
+                    <>
+                      <div className='productbox'>
+                        <div className='img_box'>
+                          <img src={curElm.image} alt=''></img>
+                        </div>
+                        <div className='detail'>
+                          <h3>{curElm.Name}</h3>
+                          <p>Rs.{curElm.price}</p>
+                          <div className='icon'>
+                            <button><FaEye /></button>
+                            <button><FaHeart /></button>
+                            <button><FaShoppingCart /></button>
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  )
+                })
+              }
+            </div>
+
+            <div className='box'> 
+              <div className='header'>
+                <h2>Featured Product</h2>
+              </div>
+              {
+                featuredProduct.map((curElm) => {
+                  return (
+                    <>
+                      <div className='productbox'>
+                        <div className='img_box'>
+                          <img src={curElm.image} alt=''></img>
+                        </div>
+                        <div className='detail'>
+                          <h3>{curElm.Name}</h3>
+                          <p>Rs.{curElm.price}</p>
+                          <div className='icon'>
+                            <button><FaEye /></button>
+                            <button><FaHeart /></button>
+                            <button><FaShoppingCart /></button>
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  )
+                })
+              }
+            </div>
+
+            <div className='box'> 
+              <div className='header'>
+                <h2>Top Product</h2>
+              </div>
+              {
+                topProduct.map((curElm) => {
+                  return (
+                    <>
+                      <div className='productbox'>
+                        <div className='img_box'>
+                          <img src={curElm.image} alt=''></img>
+                        </div>
+                        <div className='detail'>
+                          <h3>{curElm.Name}</h3>
+                          <p>Rs.{curElm.price}</p>
+                          <div className='icon'>
+                            <button><FaEye /></button>
+                            <button><FaHeart /></button>
+                            <button><FaShoppingCart /></button>
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  )
+                })
+              }
+            </div>
+
           </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { MdLocalShipping } from "react-icons/md";
+// import { MdLocalShipping } from "react-icons/md";
 import './Nav.css'
 import { FaSearch } from "react-icons/fa";
 import { CiLogin } from "react-icons/ci"
@@ -15,14 +15,14 @@ const Nav = () => {
     <>
     <div className='header'>
         
-        <div className='top_header'>
+        {/* <div className='top_header'>
             <div className='icon'>
             <MdLocalShipping />
             </div>
             <div className='info'>
                 <p>Free shipping when products worth more than Rs.250000</p>
             </div>
-        </div>
+        </div> */}
 
         <div className='mid_header'>
             <div className='logo'>
