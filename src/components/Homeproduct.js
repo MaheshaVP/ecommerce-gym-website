@@ -5,7 +5,7 @@ const Homeproduct =
         Name : 'Product1',
         price : '25,000',
         image : 'images/product1.jpg',
-        cat : '',
+        cat : 'threadmill',
         type : 'new',
     },
     {
@@ -13,7 +13,7 @@ const Homeproduct =
         Name : 'Product2',
         price : '30,000',
         image : 'images/product2.jpg',
-        cat : '',
+        cat : 'threadmill',
         type : 'featured',
     },
     {
@@ -21,7 +21,7 @@ const Homeproduct =
         Name : 'Product3',
         price : '40,000',
         image : 'images/product3.jpg',
-        cat : '',
+        cat : 'threadmill',
         type : 'top',
     },
     {
@@ -29,7 +29,7 @@ const Homeproduct =
         Name : 'Product4',
         price : '2,000',
         image : 'images/product4.jpg',
-        cat : '',
+        cat : 'dumbell',
         type : 'new',
     },
     {
@@ -37,7 +37,7 @@ const Homeproduct =
         Name : 'Product5',
         price : '2,500',
         image : 'images/product5.jpg',
-        cat : '',
+        cat : 'dumbell',
         type : 'featured',
     },
     {
@@ -45,7 +45,7 @@ const Homeproduct =
         Name : 'Product6',
         price : '1,000',
         image : 'images/product6.jpg',
-        cat : '',
+        cat : 'dumbell',
         type : 'top',
     },
     {
@@ -53,7 +53,7 @@ const Homeproduct =
         Name : 'Product7',
         price : '40,000',
         image : 'images/product7.jpg',
-        cat : '',
+        cat : 'cardio',
         type : 'new',
     },
     {
@@ -61,7 +61,7 @@ const Homeproduct =
         Name : 'Product8',
         price : '35,000',
         image : 'images/product8.jpg',
-        cat : '',
+        cat : 'cardio',
         type : 'featured',
     },
     {
@@ -69,7 +69,7 @@ const Homeproduct =
         Name : 'Product9',
         price : '35,000',
         image : 'images/product9.jpg',
-        cat : '',
+        cat : 'cardio',
         type : 'top',
     },
     {
@@ -77,7 +77,7 @@ const Homeproduct =
         Name : 'Product10',
         price : '35,000',
         image : 'images/product10.jpg',
-        cat : '',
+        cat : 'dumbell',
         type : 'new',
     },
     {
@@ -85,7 +85,7 @@ const Homeproduct =
         Name : 'Product11',
         price : '35,000',
         image : 'images/product11.jpg',
-        cat : '',
+        cat : 'dumbell',
         type : 'featured',
     },
     {
@@ -93,7 +93,7 @@ const Homeproduct =
         Name : 'Product12',
         price : '35,000',
         image : 'images/product12.jpg',
-        cat : '',
+        cat : 'cardio',
         type : 'top',
     },
 ]
