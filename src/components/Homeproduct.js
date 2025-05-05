@@ -11,7 +11,7 @@ const Homeproduct =
     {
         id : 2,
         Name : 'Product2',
-        price : '30,000',
+        price : '23,000',
         image : 'images/product2.jpg',
         cat : 'threadmill',
         type : 'featured',
@@ -19,7 +19,7 @@ const Homeproduct =
     {
         id : 3,
         Name : 'Product3',
-        price : '40,000',
+        price : '10,000',
         image : 'images/product3.jpg',
         cat : 'threadmill',
         type : 'top',
@@ -51,7 +51,7 @@ const Homeproduct =
     {
         id : 7,
         Name : 'Product7',
-        price : '40,000',
+        price : '20,000',
         image : 'images/product7.jpg',
         cat : 'cardio',
         type : 'new',
@@ -67,7 +67,7 @@ const Homeproduct =
     {
         id : 9,
         Name : 'Product9',
-        price : '35,000',
+        price : '20,000',
         image : 'images/product9.jpg',
         cat : 'cardio',
         type : 'top',
@@ -75,7 +75,7 @@ const Homeproduct =
     {
         id : 10,
         Name : 'Product10',
-        price : '35,000',
+        price : '15,000',
         image : 'images/product10.jpg',
         cat : 'dumbell',
         type : 'new',
@@ -83,7 +83,7 @@ const Homeproduct =
     {
         id : 11,
         Name : 'Product11',
-        price : '35,000',
+        price : '28,000',
         image : 'images/product11.jpg',
         cat : 'dumbell',
         type : 'featured',
@@ -91,12 +91,11 @@ const Homeproduct =
     {
         id : 12,
         Name : 'Product12',
-        price : '35,000',
+        price : '25,000',
         image : 'images/product12.jpg',
         cat : 'cardio',
         type : 'top',
     },
 ]
-
 
 export default Homeproduct

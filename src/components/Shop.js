@@ -2,11 +2,11 @@ import React from 'react'
 import './Shop.css'
 import { FaHeart , FaEye } from "react-icons/fa";
 
-const Shop = ({shop}) => {
+const Shop = ({shop , Filter , allcateFilter , addtocart}) => {
   return (
     <>
      <div className='shop'>
-      <h2># Shop</h2>
+      <h2>Shop</h2>
       <p>Home . shop</p>
          <div className='container'>
             <div className='left_box'>
@@ -16,9 +16,10 @@ const Shop = ({shop}) => {
                   </div>
                   <div className='box'>
                     <ul>
-                      <li># Threadmill</li>
-                      <li># Dumbell</li>
-                      <li># Cardio</li>
+                      <li onClick={() => allcateFilter ()}>All</li>
+                      <li onClick={() => Filter ("threadmill")}>Threadmill</li>
+                      <li onClick={() => Filter ("dumbell")}>Dumbell</li>
+                      <li onClick={() => Filter ("cardio")}>Cardio</li>
                     </ul>
                   </div>
                </div>
@@ -51,6 +52,11 @@ const Shop = ({shop}) => {
                                   <li><FaHeart /></li>
                                   <li><FaEye /></li>
                                 </div>
+                            </div>
+                            <div className='detail'>
+                              <h3>{curElem.Name}</h3>
+                              <p>{curElem.price}</p>
+                              <button onClick={() => addtocart (curElem)}>Add To Cart</button>
                             </div>
                           </div>
                         </>

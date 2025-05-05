@@ -8,7 +8,7 @@ import {FaUserCircle } from "react-icons/fa"
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = ({search,setSearch,searchProduct}) => {
     const { loginWithRedirect , logout ,  user, isAuthenticated } = useAuth0();
 
   return (
@@ -29,8 +29,8 @@ const Nav = () => {
                 <img src='images/logo_webp.jpg' alt='logo'/>
             </div>
             <div className='search_box'>
-                <input type='text' value="" placeholder='search'></input>
-                <button><FaSearch /></button>
+                <input type='text' value={search} placeholder='search' onChange={(e) => setSearch(e.target.value)}></input>
+                <button onClick={searchProduct}><FaSearch /></button>
             </div>
 
             {
@@ -95,7 +95,7 @@ const Nav = () => {
                         <ul>
                             <li><Link to='/' className='link'>Home</Link></li>
                             <li><Link to='/shop' className='link'>Shop</Link></li>
-                            <li><Link to='/collection' className='link'>Collection</Link></li>
+                            <li><Link to='/cart' className='link'>Cart</Link></li>
                             <li><Link to='/about' className='link'>About</Link></li>
                             <li><Link to='/contact' className='link'>Contact</Link></li>
                         </ul>
