@@ -3,7 +3,7 @@ const Homeproduct =
     {
         id : 1,
         Name : 'Product1',
-        price : '25,000',
+        price : '25000',
         image : 'images/product1.jpg',
         cat : 'threadmill',
         type : 'new',
@@ -11,7 +11,7 @@ const Homeproduct =
     {
         id : 2,
         Name : 'Product2',
-        price : '23,000',
+        price : '23000',
         image : 'images/product2.jpg',
         cat : 'threadmill',
         type : 'featured',
@@ -19,7 +19,7 @@ const Homeproduct =
     {
         id : 3,
         Name : 'Product3',
-        price : '10,000',
+        price : '10000',
         image : 'images/product3.jpg',
         cat : 'threadmill',
         type : 'top',
@@ -27,7 +27,7 @@ const Homeproduct =
     {
         id : 4,
         Name : 'Product4',
-        price : '2,000',
+        price : '2000',
         image : 'images/product4.jpg',
         cat : 'dumbell',
         type : 'new',
@@ -35,7 +35,7 @@ const Homeproduct =
     {
         id : 5,
         Name : 'Product5',
-        price : '2,500',
+        price : '2500',
         image : 'images/product5.jpg',
         cat : 'dumbell',
         type : 'featured',
@@ -43,7 +43,7 @@ const Homeproduct =
     {
         id : 6,
         Name : 'Product6',
-        price : '1,000',
+        price : '1000',
         image : 'images/product6.jpg',
         cat : 'dumbell',
         type : 'top',
@@ -51,7 +51,7 @@ const Homeproduct =
     {
         id : 7,
         Name : 'Product7',
-        price : '20,000',
+        price : '20000',
         image : 'images/product7.jpg',
         cat : 'cardio',
         type : 'new',
@@ -59,7 +59,7 @@ const Homeproduct =
     {
         id : 8,
         Name : 'Product8',
-        price : '35,000',
+        price : '35000',
         image : 'images/product8.jpg',
         cat : 'cardio',
         type : 'featured',
@@ -67,7 +67,7 @@ const Homeproduct =
     {
         id : 9,
         Name : 'Product9',
-        price : '20,000',
+        price : '20000',
         image : 'images/product9.jpg',
         cat : 'cardio',
         type : 'top',
@@ -75,7 +75,7 @@ const Homeproduct =
     {
         id : 10,
         Name : 'Product10',
-        price : '15,000',
+        price : '15000',
         image : 'images/product10.jpg',
         cat : 'dumbell',
         type : 'new',
@@ -83,7 +83,7 @@ const Homeproduct =
     {
         id : 11,
         Name : 'Product11',
-        price : '28,000',
+        price : '28000',
         image : 'images/product11.jpg',
         cat : 'dumbell',
         type : 'featured',
@@ -91,7 +91,7 @@ const Homeproduct =
     {
         id : 12,
         Name : 'Product12',
-        price : '25,000',
+        price : '25000',
         image : 'images/product12.jpg',
         cat : 'cardio',
         type : 'top',
