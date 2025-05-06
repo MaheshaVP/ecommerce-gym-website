@@ -1,10 +1,60 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Shop.css'
 import { FaHeart , FaEye } from "react-icons/fa";
+import { AiOutlineClose } from 'react-icons/ai'
 
 const Shop = ({shop , Filter , allcateFilter , addtocart}) => {
+  //Toggle Product
+  const [showDetail , setShowDetail] = useState(false)
+
+  //Detail page data
+  const [detail , setDetail] = useState([])
+
+  //showing Detail 
+  const detailpage = (product) => {
+
+    // const detaildata = ([{product}])
+    // const productdetail = detaildata[0]['']
+    // console.log(productdetail)
+    // setDetail(productdetail)
+    // setShowDetail(true)
+
+    setDetail(product); 
+    console.log(product)
+    setShowDetail(true);
+  }
+
+  //close detail
+  const closedetail = () => {
+    setShowDetail(false)
+  }
+
   return (
     <>
+    {
+      showDetail ? 
+      <>
+      <div className='product_detail'>
+        <button className='close_btn' onClick={closedetail}><AiOutlineClose/></button>
+        <div className='container'>
+          <div className='img_box'>
+            <img src={detail.image} alt=''></img>
+          </div>
+          <div className='info'>
+            <h4>{detail.cat}</h4>
+            <h2>{detail.Name}</h2>
+            <p>Transform your home into a fitness haven: purchase this durable and versatile gym equipment 
+            and achieve your health goals with the convenience and flexibility of your own personal gym. </p>
+            <h3>Rs.{detail.price}</h3>
+            <button onClick={() => addtocart(detail)}>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      </>
+      :
+      null
+    }
+
      <div className='shop'>
       <h2>Shop</h2>
       <p>Home . shop</p>
@@ -50,7 +100,7 @@ const Shop = ({shop , Filter , allcateFilter , addtocart}) => {
                               <img src={curElem.image} alt={curElem.Name}/>
                                 <div className='icon'>
                                   <li><FaHeart /></li>
-                                  <li><FaEye /></li>
+                                  <li onClick={ () => detailpage (curElem)}><FaEye /></li>
                                 </div>
                             </div>
                             <div className='detail'>

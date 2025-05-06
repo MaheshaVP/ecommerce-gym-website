@@ -5,7 +5,7 @@ import Homeproduct from './Homeproduct'
 import { FaEye,FaHeart, FaFacebook ,FaTwitter , FaInstagram ,FaYoutube,FaShoppingCart} from "react-icons/fa";
 // import {  } from "react-icons/fa";
 
-const Home = () => {
+const Home = ({addtocart}) => {
   //product category
   const[newProduct , setNewProduct] = useState([])
   const[featuredProduct , setFeaturedProduct] = useState([])
@@ -98,7 +98,7 @@ const Home = () => {
                             <div className='info'>
                               <h3>{curElm.Name}</h3>
                               <p>RS.{curElm.price}</p>
-                              <button className='btn'>Add To Cart</button>
+                              <button className='btn' onClick={() => addtocart (curElm)}>Add To Cart</button>
                             </div>
                           </div>
                         </>
@@ -198,7 +198,7 @@ const Home = () => {
                           <div className='icon'>
                             <button><FaEye /></button>
                             <button><FaHeart /></button>
-                            <button><FaShoppingCart /></button>
+                            <button onClick={() => addtocart (curElm)}><FaShoppingCart /></button>
                           </div>
                         </div>
                       </div>
@@ -226,7 +226,7 @@ const Home = () => {
                           <div className='icon'>
                             <button><FaEye /></button>
                             <button><FaHeart /></button>
-                            <button><FaShoppingCart /></button>
+                            <button onClick={() => addtocart (curElm)}><FaShoppingCart /></button>
                           </div>
                         </div>
                       </div>
@@ -254,7 +254,7 @@ const Home = () => {
                           <div className='icon'>
                             <button><FaEye /></button>
                             <button><FaHeart /></button>
-                            <button><FaShoppingCart /></button>
+                            <button onClick={() => addtocart (curElm)}><FaShoppingCart /></button>
                           </div>
                         </div>
                       </div>

@@ -30,12 +30,15 @@ const Cart = ({cart , setCart}) => {
         const exist = cart.find((x) => {
             return x.id === product.id
         })
-        if(exist.qty > 0) {
+        if(exist.qty >= 0) {
             setCart(cart.filter((curElem) => {
                 return curElem.id !== product.id
             }))
         }
     }
+
+    //Total Price
+    const total = cart.reduce((price, item) => price + item.qty * item.price , 0)
 
   return (
     <>
@@ -79,6 +82,17 @@ const Cart = ({cart , setCart}) => {
                             </>
                         )
                     })
+                }
+            </div>
+            <div className='bottom'>
+                {
+                    cart.length > 0 && 
+                    <>
+                    <div className='Total'>
+                        <h4>Sub Total : Rs.{total}</h4>
+                    </div>
+                    <button>Checkout</button>
+                    </>
                 }
             </div>
         </div>
