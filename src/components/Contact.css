@@ -41,9 +41,40 @@
 }
 
 .contact .container .form .box .label h4 {
-    margin-left: 30px;
+    margin-left: 18px;
     color: #232323;
     font-size: 14px;
     font-weight: 600;
+    margin-top: 10px;
+}
+
+.contact .container .form .box .input input {
+    margin-right: 18px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #8a8a8a;
+    padding: 10px 20px;
+}
+
+.contact .container .form .box .input textarea {
+    margin-right: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #8a8a8a;
+    padding: 10px 20px;
+    resize: none;
+}
+.contact .container .form button {
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 10px 30px;
+    color: #232323;
+    border: none;
+    outline: none;
+    background: none;
+    background: #fed700;
+    cursor: pointer;
 }
 

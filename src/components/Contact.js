@@ -1,7 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 
 const Contact = () => {
+    const [user , setUser] = useState({
+        Name : '', email : '', subject : '', Message : ''
+    })
+
+    let values,names
+    const data = (e) => {
+        values = e.target.value
+        names = e.target.name
+        setUser({...user, [names]:values })
+    }
+
+    const send = async (e) => {
+        const {Name,email,subject,Message} = user
+        e.preventDefault()
+        const option = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                Name, email, subject, Message
+            })
+        }
+
+        const send = await fetch('https://react-ecommerce-contact-48489-default-rtdb.firebaseio.com/Message.json',option)
+
+        if(send) {
+            alert("Message sent")
+        } else {
+            alert("Error occured Message sent failed")
+        }
+    }
+
   return (
     <>
     <div className='contact'>
@@ -14,7 +47,7 @@ const Contact = () => {
                             <h4>Name</h4>
                         </div>
                         <div className='input'>
-                            <input type='text' placeholder='Name' value='' name='' ></input>
+                            <input type='text' placeholder='Name' value={user.Name} name='Name' onChange={data} ></input>
                         </div>
                     </div>
 
@@ -23,7 +56,7 @@ const Contact = () => {
                             <h4>E-mail</h4>
                         </div>
                         <div className='input'>
-                            <input type='email' placeholder='E-mail' value='' name='' ></input>
+                            <input type='email' placeholder='E-mail' value={user.email} name='email' onChange={data} ></input>
                         </div>
                     </div>
 
@@ -32,7 +65,7 @@ const Contact = () => {
                             <h4>Subject</h4>
                         </div>
                         <div className='input'>
-                            <input type='text' placeholder='Subject' value='' name='' ></input>
+                            <input type='text' placeholder='Subject' value={user.subject} name='subject' onChange={data}></input>
                         </div>
                     </div>
 
@@ -41,10 +74,10 @@ const Contact = () => {
                             <h4>Message</h4>
                         </div>
                         <div className='input'>
-                            <textarea placeholder='Message' value='' name=''></textarea>
+                            <textarea placeholder='Message' value={user.Message} name='Message' onChange={data}></textarea>
                         </div>
                     </div>
-                    <button type='submit'>Send</button>
+                    <button type='submit'onClick={send} >Send</button>
 
                 </form>
             </div>
