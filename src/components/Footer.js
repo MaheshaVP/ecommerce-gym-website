@@ -90,6 +90,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <div className='copy'>
+                <p>&copy; 2025 Sahara Fitness. All rights reserved.</p>
+            </div>
         </div>
     </>
   )

@@ -27,7 +27,7 @@
 .cart .empty_cart h2 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 22px;
     color: #232323;
     letter-spacing: 1px;
 }
@@ -44,11 +44,13 @@
     font-weight: 600;
     cursor: pointer;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 .cart .empty_cart button:hover {
-    color: #fed700;
+    color: #fff;
     background: #cd176c;
+    border-radius: 5px;
 }
 
 .cart .container {
@@ -180,3 +182,98 @@
     background: #232323;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    .cart .container .box {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .cart .container .box .img_box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cart .container .box .detail {
+        flex-direction: column;
+        margin: 10px 0 0 0;
+    }
+
+    .cart .container .box .detail .info {
+        margin: 10px 15px;
+    }
+
+    .cart .container .box .detail .quantity {
+        margin: 10px 15px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .cart .container .box .detail .icon {
+        margin: 10px 15px;
+    }
+
+    .cart .bottom {
+        margin: 20px 15px;
+    }
+
+    .cart .bottom .Total h4 {
+        font-size: 18px;
+    }
+
+    .cart .bottom button {
+        width: 100%;
+    }
+
+    .cart .empty_cart button {
+        margin-left: 0;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .cart .container .box .detail .info h3 {
+        font-size: 18px;
+    }
+
+    .cart .container .box .detail .info h4,
+    .cart .container .box .detail .info p {
+        font-size: 12px;
+    }
+
+    .cart .container .box .detail .quantity button,
+    .cart .container .box .detail .quantity input {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .cart .container .box .detail .quantity input {
+        width: 60px;
+    }
+
+    .cart .container .box .detail .icon li {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .cart .bottom .Total h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cart .bottom button {
+        font-size: 14px;
+    }
+
+    .cart .empty_cart h2 {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}

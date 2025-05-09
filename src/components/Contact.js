@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Contact.css'
+import Mapiframe from './Mapiframe'
 
 const Contact = () => {
     const [user , setUser] = useState({
@@ -80,6 +81,9 @@ const Contact = () => {
                     <button type='submit'onClick={send} >Send</button>
 
                 </form>
+            </div>
+            <div className='map'>
+                <Mapiframe />
             </div>
         </div>
     </div>

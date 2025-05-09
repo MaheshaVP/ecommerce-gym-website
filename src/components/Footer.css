@@ -13,13 +13,22 @@
 
 .footer .container {
     display: flex;
-    max-width: 100%;
+    flex-wrap: wrap; /* Allow elements to wrap in smaller screens */
+    justify-content: space-between;
+}
+
+.footer .container .left-box,
+.footer .container .right-box {
+    padding: 20px;
 }
 
 .footer .container .left-box {
     width: 30%;
-    padding: 20px 20px;
     border-right: 2px solid #b8b7b7;
+}
+
+.footer .container .right-box {
+    width: 65%;
 }
 
 .footer .container .left-box .box {
@@ -50,37 +59,32 @@
     color: #232323;
 }
 
-.footer .container .right-box {
-    width: 68%;
-    padding: 10px 20px;
-}
-
 .footer .container .right-box .header {
     max-width: 100%;
-    align-items: center;
+    text-align: center;
 }
 
 .footer .container .right-box .header img {
-    margin-left: 35%;
+    width: 250px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 .footer .container .right-box .header p {
     margin-top: 15px;
     font-size: 14px;
-    text-align: center;
-    font-weight: 600;
     color: #8a8a8a;
 }
 
 .footer .container .right-box .bottom {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
-    padding: 20px 20px;
 }
 
 .footer .container .right-box .bottom .box {
+    width: 30%;  /* Ensure each section takes up 30% width on larger screens */
     padding: 10px 20px;
 }
 
@@ -99,8 +103,6 @@
 .footer .container .right-box .bottom .box ul li {
     margin-top: 6px;
     color: #8a8a8a;
-    text-transform: capitalize;
-    letter-spacing: 1px;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -111,4 +113,135 @@
     color: #cd1e76;
 }
 
- 
+.footer .copy {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.footer .copy p {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .footer .container .left-box,
+    .footer .container .right-box {
+        width: 100%;
+        border: none;
+        padding: 10px;
+    }
+
+    .footer .container .right-box .bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer .container .right-box .bottom .box {
+        width: 100%; /* Make the boxes take up full width */
+        text-align: center;
+    }
+
+    .footer .container .right-box .header img {
+        width: 200px;  /* Adjust image size */
+    }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+        background-color: #f6f7f8;  /* Optional: Ensure the footer has a background on mobile */
+        font-size: 14px;  /* Make text more legible */
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .container .left-box,
+    .footer .container .right-box {
+        width: 100%; /* Ensure both boxes take up full width */
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Left Box */
+    .footer .container .left-box .box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 20px;  /* Add margin between boxes */
+    }
+
+    .footer .container .left-box .box .icon_box {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .footer .container .left-box .box .detail h3 {
+        font-size: 16px;  /* Make heading font size a little bigger for mobile */
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer .container .left-box .box .detail p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Right Box */
+    .footer .container .right-box {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer .container .right-box .header p {
+        font-size: 14px;  /* Ensure text in the header is readable */
+        margin-bottom: 10px;
+    }
+
+    .footer .container .right-box .bottom .box {
+        width: 100%;
+        margin-bottom: 15px;  /* Space between boxes */
+    }
+
+    .footer .container .right-box .bottom .box h3 {
+        font-size: 16px;  /* Make subheading larger */
+        margin-bottom: 10px;
+    }
+
+    .footer .container .right-box .bottom .box ul li {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    /* Ensure footer links are centered and appropriately sized */
+    .footer .container .right-box .bottom .box ul li a {
+        font-size: 14px;
+        color: #232323;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer .container .right-box .bottom .box ul li a:hover {
+        color: #cd1e76;  /* Optional: Change link color on hover */
+    }
+
+    /* Footer Logo Image */
+    .footer .container .right-box .header img {
+        width: 180px; /* Adjust the image size for mobile */
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
