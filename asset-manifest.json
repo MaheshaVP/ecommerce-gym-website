@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/ecommerce-gym-website/static/css/main.7f1dda53.css",
-    "main.js": "/ecommerce-gym-website/static/js/main.8cc36e1b.js",
+    "main.css": "/ecommerce-gym-website/static/css/main.76abd020.css",
+    "main.js": "/ecommerce-gym-website/static/js/main.37ae13bc.js",
     "static/js/453.78a6c44e.chunk.js": "/ecommerce-gym-website/static/js/453.78a6c44e.chunk.js",
+    "static/media/homeslide1.jpg": "/ecommerce-gym-website/static/media/homeslide1.7ad0ddbec57cc06e85d8.jpg",
     "index.html": "/ecommerce-gym-website/index.html",
-    "main.7f1dda53.css.map": "/ecommerce-gym-website/static/css/main.7f1dda53.css.map",
-    "main.8cc36e1b.js.map": "/ecommerce-gym-website/static/js/main.8cc36e1b.js.map",
+    "main.76abd020.css.map": "/ecommerce-gym-website/static/css/main.76abd020.css.map",
+    "main.37ae13bc.js.map": "/ecommerce-gym-website/static/js/main.37ae13bc.js.map",
     "453.78a6c44e.chunk.js.map": "/ecommerce-gym-website/static/js/453.78a6c44e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f1dda53.css",
-    "static/js/main.8cc36e1b.js"
+    "static/css/main.76abd020.css",
+    "static/js/main.37ae13bc.js"
   ]
 }
