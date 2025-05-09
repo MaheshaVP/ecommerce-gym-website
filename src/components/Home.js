@@ -96,7 +96,7 @@ const Home = ({ addtocart }) => {
                 <div className='head'><h3>Our Testimonial</h3></div>
                 <div className='detail'>
                   <div className='img_box'>
-                    <img src='../images/indexlogo.png' alt="Testimonial" />
+                    <img src='images/indexlogo.png' alt="Testimonial" />
                   </div>
                   <div className='info'>
                     <h3>Bodybuilder</h3>

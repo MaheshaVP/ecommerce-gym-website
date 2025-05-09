@@ -7,7 +7,7 @@ const About = () => {
       <div className='top'>
         <h2>About Us</h2>
         <div className='image-box'>
-          <img src='images/about.jpg' alt='about page' />
+          <img src='/images/about.jpg' alt='about page' />
           <p>
             “Fuel Your Fitness Journey with Premium Gym Gear”<br />
             <strong>“Strong Equipment. Stronger You.”</strong>
