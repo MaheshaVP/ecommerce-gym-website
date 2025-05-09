@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MaheshaVP/ecommerce-gym-website/static/css/main.7f1dda53.css",
-    "main.js": "/MaheshaVP/ecommerce-gym-website/static/js/main.cb25bf14.js",
-    "static/js/453.78a6c44e.chunk.js": "/MaheshaVP/ecommerce-gym-website/static/js/453.78a6c44e.chunk.js",
-    "index.html": "/MaheshaVP/ecommerce-gym-website/index.html",
-    "main.7f1dda53.css.map": "/MaheshaVP/ecommerce-gym-website/static/css/main.7f1dda53.css.map",
-    "main.cb25bf14.js.map": "/MaheshaVP/ecommerce-gym-website/static/js/main.cb25bf14.js.map",
-    "453.78a6c44e.chunk.js.map": "/MaheshaVP/ecommerce-gym-website/static/js/453.78a6c44e.chunk.js.map"
+    "main.css": "/ecommerce-gym-website/static/css/main.7f1dda53.css",
+    "main.js": "/ecommerce-gym-website/static/js/main.8cc36e1b.js",
+    "static/js/453.78a6c44e.chunk.js": "/ecommerce-gym-website/static/js/453.78a6c44e.chunk.js",
+    "index.html": "/ecommerce-gym-website/index.html",
+    "main.7f1dda53.css.map": "/ecommerce-gym-website/static/css/main.7f1dda53.css.map",
+    "main.8cc36e1b.js.map": "/ecommerce-gym-website/static/js/main.8cc36e1b.js.map",
+    "453.78a6c44e.chunk.js.map": "/ecommerce-gym-website/static/js/453.78a6c44e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f1dda53.css",
-    "static/js/main.cb25bf14.js"
+    "static/js/main.8cc36e1b.js"
   ]
 }
