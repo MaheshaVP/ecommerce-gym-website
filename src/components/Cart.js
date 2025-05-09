@@ -1,5 +1,5 @@
 import React from 'react'
-import './Cart.css'
+import './styles/Cart.css'
 import {Link} from 'react-router-dom'
 import { RiCloseFill } from "react-icons/ri";
 

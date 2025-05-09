@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './Home.css';
+import React, { useState } from 'react';
+import './styles/Home.css';
 import { Link } from 'react-router-dom';
 import Homeproduct from './Homeproduct';
 import {
@@ -12,13 +12,17 @@ import {
   FaShoppingCart
 } from "react-icons/fa";
 
+// Categorize products once at module level (before component function)
+const newProductData = Homeproduct.filter((x) => x.type === 'new');
+const featuredProductData = Homeproduct.filter((x) => x.type === 'featured');
+const topProductData = Homeproduct.filter((x) => x.type === 'top');
+
 const Home = ({ addtocart }) => {
-  const [newProduct, setNewProduct] = useState([]);
-  const [featuredProduct, setFeaturedProduct] = useState([]);
-  const [topProduct, setTopProduct] = useState([]);
+  const [newProduct] = useState(newProductData);
+  const [featuredProduct] = useState(featuredProductData);
+  const [topProduct] = useState(topProductData);
   const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
 
-  // Filter trending products
   const filtercategory = (x) => {
     const filtered = Homeproduct.filter((curElm) => curElm.type === x);
     setTrendingProduct(filtered);
@@ -27,18 +31,6 @@ const Home = ({ addtocart }) => {
   const allTrendingProduct = () => {
     setTrendingProduct(Homeproduct);
   };
-
-  // Categorize products on mount
-  useEffect(() => {
-    const newcategory = Homeproduct.filter((x) => x.type === 'new');
-    setNewProduct(newcategory);
-
-    const featuredcategory = Homeproduct.filter((x) => x.type === 'featured');
-    setFeaturedProduct(featuredcategory);
-
-    const topcategory = Homeproduct.filter((x) => x.type === 'top');
-    setTopProduct(topcategory);
-  }, []);
 
   return (
     <div className='home'>
@@ -96,7 +88,7 @@ const Home = ({ addtocart }) => {
                 <div className='head'><h3>Our Testimonial</h3></div>
                 <div className='detail'>
                   <div className='img_box'>
-                    <img src='images/indexlogo.png' alt="Testimonial" />
+                    <img src='../ecommerce-gym-website/images//indexlogo.png' alt="Testimonial" />
                   </div>
                   <div className='info'>
                     <h3>Bodybuilder</h3>
@@ -130,16 +122,16 @@ const Home = ({ addtocart }) => {
       <div className='banners'>
         <div className='container'>
           <div className='left_box'>
-            <div className='box'><img src='images/multiple-home-banner11.jpg' alt="Banner" /></div>
-            <div className='box'><img src='images/multiple-home-banner2.jpg' alt="Banner" height={360} /></div>
+            <div className='box'><img src='../ecommerce-gym-website/images//multiple-home-banner11.jpg' alt="Banner" /></div>
+            <div className='box'><img src='../ecommerce-gym-website/images//multiple-home-banner2.jpg' alt="Banner" height={360} /></div>
           </div>
           <div className='right_box'>
             <div className='top'>
-              <img src='images/multiple-home-banner3.jpg' alt="Banner" width={450} height={200} />
-              <img src='images/multiple-home-banner4.jpg' alt="Banner" width={340} height={200} />
+              <img src='../ecommerce-gym-website/images//multiple-home-banner3.jpg' alt="Banner" width={450} height={200} />
+              <img src='../ecommerce-gym-website/images//multiple-home-banner4.jpg' alt="Banner" width={340} height={200} />
             </div>
             <div className='bottom'>
-              <img src='images/multiple-home-banner5.jpg' alt="Banner" />
+              <img src='../ecommerce-gym-website/images//multiple-home-banner5.jpg' alt="Banner" />
             </div>
           </div>
         </div>

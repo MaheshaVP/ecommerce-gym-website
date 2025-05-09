@@ -1,5 +1,5 @@
 import React from 'react'
-import './About.css'
+import './styles/About.css'
 
 const About = () => {
   return (
@@ -7,7 +7,7 @@ const About = () => {
       <div className='top'>
         <h2>About Us</h2>
         <div className='image-box'>
-          <img src='/images/about.jpg' alt='about page' />
+          <img src='../ecommerce-gym-website/images//about.jpg' alt='about page' />
           <p>
             “Fuel Your Fitness Journey with Premium Gym Gear”<br />
             <strong>“Strong Equipment. Stronger You.”</strong>
@@ -45,10 +45,10 @@ const About = () => {
       <div className='footer'>
         <h3>Our Top Selling Items</h3>
         <div className='images'>
-          <div className='product'><img src='images/threadmill1.jpg' alt='Treadmill' /><p>Treadmill</p></div>
-          <div className='product'><img src='images/dumbell2.jpg' alt='Dumbbells' /><p>Dumbbells</p></div>
-          <div className='product'><img src='images/bike1.jpg' alt='Exercise Bike' /><p>Exercise Bike</p></div>
-          <div className='product'><img src='images/cardio1.jpg' alt='Cardio Machine' /><p>Cardio Machine</p></div>
+          <div className='product'><img src='../ecommerce-gym-website/images//threadmill1.jpg' alt='Treadmill' /><p>Treadmill</p></div>
+          <div className='product'><img src='../ecommerce-gym-website/images//dumbell2.jpg' alt='Dumbbells' /><p>Dumbbells</p></div>
+          <div className='product'><img src='../ecommerce-gym-website/images//bike1.jpg' alt='Exercise Bike' /><p>Exercise Bike</p></div>
+          <div className='product'><img src='../ecommerce-gym-website/images//cardio1.jpg' alt='Cardio Machine' /><p>Cardio Machine</p></div>
         </div>
       </div>
     </div>

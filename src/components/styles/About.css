@@ -38,7 +38,8 @@
 
 .about .top .image-box p {
   font-size: 18px;
-  margin-top: 15px;
+  margin-top: 20px;
+  font-weight: 600;
   font-style: italic;
   color: #555;
 }

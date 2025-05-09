@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Shop.css';
+import { useState } from 'react';
+import './styles/Shop.css';
 import { FaHeart, FaEye } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -56,7 +56,7 @@ const Shop = ({ shop, Filter, allcateFilter, addtocart }) => {
             </div>
             <div className='banner'>
               <div className='img_box'>
-                <img src='images/shop_leftbanner.jpeg' alt='' />
+                <img src='../ecommerce-gym-website/images//shop_leftbanner.jpeg' alt='' />
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Shop = ({ shop, Filter, allcateFilter, addtocart }) => {
           <div className='right_box'>
             <div className='banner'>
               <div className='img_box'>
-                <img src='images/shop_rtop.jpg' alt='' height={200} />
+                <img src='../ecommerce-gym-website/images//shop_rtop.jpg' alt='' height={200} />
               </div>
             </div>
             <div className='product_box'>

@@ -1,6 +1,6 @@
 import React from 'react'
 // import { MdLocalShipping } from "react-icons/md";
-import './Nav.css'
+import './styles/Nav.css'
 import { FaSearch } from "react-icons/fa";
 import { CiLogin } from "react-icons/ci"
 import {CiLogout} from "react-icons/ci"
@@ -26,7 +26,7 @@ const Nav = ({search,setSearch,searchProduct}) => {
 
         <div className='mid_header'>
             <div className='logo'>
-                <img src='images/indexlogo.png' alt='logo'/>
+                <img src='../ecommerce-gym-website/images//logo_webp.jpg' alt='logo'/>
             </div>
             <div className='search_box'>
                 <input type='text' value={search} placeholder='search' onChange={(e) => setSearch(e.target.value)}></input>

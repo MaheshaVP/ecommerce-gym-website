@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaPiggyBank , FaShippingFast , FaHeadphones } from "react-icons/fa";
 import { RiWallet3Line } from "react-icons/ri";
-import './Footer.css'
+import './styles/Footer.css'
 
 const Footer = () => {
   return (
@@ -53,7 +53,7 @@ const Footer = () => {
 
                 <div className='right-box'>
                     <div className='header'>
-                        <img src='images/logo_webp.jpg' alt='Logo' width={250} height={100} />
+                        <img src='../ecommerce-gym-website/images//logo_webp.jpg' alt='Logo' width={250} height={100} />
                         <p>our company will never lost your trust on any deals</p>
                     </div>
                     <div className='bottom'>
