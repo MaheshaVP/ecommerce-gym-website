@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
     width: 400px;
     background: #f6f6f6;
     padding: 20px 30px;
-    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 0px auto;
     border-top: 3px solid #fed700;
     border-radius: 5px;
@@ -66,6 +66,7 @@
     padding: 10px 20px;
     resize: none;
 }
+
 .contact .container .form button {
     margin-top: 25px;
     margin-left: 120px;
@@ -76,6 +77,11 @@
     background: none;
     background: #fed700;
     cursor: pointer;
+}
+
+.contact .container .form button:hover {
+    color: #fff;
+    background: #cd1e7c;
 }
 
 .contact .container .map {
@@ -123,13 +129,61 @@
         padding: 10px 20px;
     }
 
+    .contact .container {
+        padding: 10px 20px;
+        margin-right: 40px;
+    }
+
+    .contact .container .form {
+        width: 350px;
+        background: #f6f6f6;
+        border-top: #f6f6f6;
+    }
+
+    .contact .container .form button {
+        margin-top: 15px;
+        margin-left: 0px;
+        padding: 10px 30px;
+        border-radius: 5px;
+    }
+
+
+    .contact .container .form .box {
+        text-align: center;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
     .contact .container .form h2 {
         font-size: 18px;
         text-align: center;
     }
 
-    .contact .container .form button {
-        padding: 10px;
-        font-size: 14px;
+    .contact .container .form .box .label h4 {
+        margin-left: 60px;
     }
+
+    .contact .container .form .box .input input {
+        margin-left: 40px;
+        text-align: center;
+    }
+
+    .contact .container .form .box .input textarea {
+        margin-left: 40px;
+        text-align: center;
+    }
+
+    .contact .container .map {
+        margin-top: 20px;
+        padding: 0;
+        margin: 20px 0 0 0;
+        width: 350px;
+        border-radius: 5px;
+    }
+
+    .contact .container .map iframe {
+        padding: 0px;
+    }
+
 }
