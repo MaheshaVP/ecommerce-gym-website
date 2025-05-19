@@ -220,6 +220,7 @@
 
     .cart .bottom button {
         font-size: 14px;
+        align-self: center;
     }
 
     .cart .empty_cart h2 {
@@ -230,5 +231,6 @@
 
     .cart .empty_cart button {
         text-decoration: none;
+        margin-left: 138px;
     }
 }

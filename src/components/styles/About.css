@@ -162,6 +162,16 @@
   .about .middle .main3 ul li {
     font-size: 14px;
   }
+  
+   .about .middle .main3 ul {
+    display: flex;
+    flex-direction: column;
+   }
+
+  .about .middle .main3 ul li {
+    padding: 15px;
+    text-align: center;
+  }
 
   .about .middle .main1,
   .about .middle .main3 {
