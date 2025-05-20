@@ -172,9 +172,10 @@ const Home = ({ addtocart }) => {
                 height={200}
               />
               <img
+                id="image4"
                 src="../ecommerce-gym-website/images//multiple-home-banner4.jpg"
                 alt="Banner"
-                width={340}
+                width={350}
                 height={200}
               />
             </div>
