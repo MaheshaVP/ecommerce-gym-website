@@ -158,7 +158,7 @@ const Home = ({ addtocart }) => {
               <img
                 src="../ecommerce-gym-website/images//multiple-home-banner2.jpg"
                 alt="Banner"
-                height={360}
+                height={350}
               />
             </div>
           </div>
@@ -167,7 +167,7 @@ const Home = ({ addtocart }) => {
               <img
                 src="../ecommerce-gym-website/images//multiple-home-banner3.jpg"
                 alt="Banner"
-                width={450}
+                width={400}
                 height={200}
               />
               <img

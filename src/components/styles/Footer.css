@@ -13,7 +13,7 @@
 
 .footer .container {
     display: flex;
-    flex-wrap: wrap; /* Allow elements to wrap in smaller screens */
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -33,6 +33,7 @@
 
 .footer .container .left-box .box {
     display: flex;
+    justify-content: center;
     padding: 10px 20px;
     margin-top: 15px;
 }
@@ -72,8 +73,9 @@
 
 .footer .container .right-box .header p {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 16px;
     color: #8a8a8a;
+    text-transform: capitalize;
 }
 
 .footer .container .right-box .bottom {
@@ -84,7 +86,7 @@
 }
 
 .footer .container .right-box .bottom .box {
-    width: 30%;  /* Ensure each section takes up 30% width on larger screens */
+    width: 30%;
     padding: 10px 20px;
 }
 
@@ -98,6 +100,7 @@
 .footer .container .right-box .bottom .box ul {
     margin-top: 10px;
     list-style: none;
+    padding-left: 0;
 }
 
 .footer .container .right-box .bottom .box ul li {
@@ -122,44 +125,49 @@
 .footer .copy p {
     text-align: center;
     color: #8a8a8a;
+    font-size: 16px;
 }
 
 /* Tablet (≤768px) */
 @media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
     .footer .container {
         flex-direction: column;
-        padding: 20px 10px;
+        padding: 0;
     }
 
     .footer .container .left-box,
     .footer .container .right-box {
         width: 100%;
         border: none;
-        padding: 10px;
+        padding: 5px;
+        text-align: center;
     }
 
     .footer .container .right-box .bottom {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
 
     .footer .container .right-box .bottom .box {
-        width: 100%; /* Make the boxes take up full width */
+        width: 100%;
         text-align: center;
     }
 
     .footer .container .right-box .header img {
-        width: 200px;  /* Adjust image size */
+        width: 250px;
     }
 }
 
-/* Mobile (≤480px) */
+/* Mobile (≤420px) */
 @media (max-width: 480px) {
     .footer {
-        padding: 20px 10px;
-        background-color: #f6f7f8;  /* Optional: Ensure the footer has a background on mobile */
-        font-size: 14px;  /* Make text more legible */
+        padding: 10px 10px;
+        font-size: 14px;
     }
 
     .footer .container {
@@ -169,29 +177,27 @@
 
     .footer .container .left-box,
     .footer .container .right-box {
-        width: 100%; /* Ensure both boxes take up full width */
+        width: 100%;
         padding: 10px;
+        border: none;
         text-align: center;
     }
 
-    /* Left Box */
     .footer .container .left-box .box {
         flex-direction: column;
         align-items: center;
-        text-align: center;
         padding: 10px 0;
-        margin-bottom: 20px;  /* Add margin between boxes */
+        margin-bottom: 10px;
     }
 
     .footer .container .left-box .box .icon_box {
-        font-size: 32px;
-        margin-bottom: 10px;
+        font-size: 30px;
     }
 
     .footer .container .left-box .box .detail h3 {
-        font-size: 16px;  /* Make heading font size a little bigger for mobile */
+        font-size: 16px;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .footer .container .left-box .box .detail p {
@@ -199,49 +205,49 @@
         line-height: 1.5;
     }
 
-    /* Right Box */
-    .footer .container .right-box {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
+    .footer .container .right-box .header img {
+        width: 250px;
+        height: 80px;
+        margin-bottom: 10px;
     }
 
     .footer .container .right-box .header p {
-        font-size: 14px;  /* Ensure text in the header is readable */
+        font-size: 14px;
         margin-bottom: 10px;
+    }
+
+    .footer .container .right-box .bottom {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .footer .container .right-box .bottom .box {
         width: 100%;
-        margin-bottom: 15px;  /* Space between boxes */
+        margin-bottom: 8px;
     }
 
     .footer .container .right-box .bottom .box h3 {
-        font-size: 16px;  /* Make subheading larger */
-        margin-bottom: 10px;
+        font-size: 15px;
+        margin-bottom: 8px;
     }
 
     .footer .container .right-box .bottom .box ul li {
         font-size: 14px;
-        padding: 5px 0;
+        margin-top: 5px;
+        padding: 5px 5px;
+        color: #8a8a8a;
+        font-weight: 600;
     }
 
-    /* Ensure footer links are centered and appropriately sized */
-    .footer .container .right-box .bottom .box ul li a {
-        font-size: 14px;
-        color: #232323;
-        text-decoration: none;
-        transition: color 0.3s ease;
+    .footer .copy {
+        margin-top: 0;
+        padding: 10px 20px;
     }
 
-    .footer .container .right-box .bottom .box ul li a:hover {
-        color: #cd1e76;  /* Optional: Change link color on hover */
-    }
-
-    /* Footer Logo Image */
-    .footer .container .right-box .header img {
-        width: 180px; /* Adjust the image size for mobile */
-        height: auto;
-        margin-bottom: 20px;
+    .footer .copy p {
+        font-size: 16px;
+        text-align: center;
+        color: #8a8a8a;
     }
 }

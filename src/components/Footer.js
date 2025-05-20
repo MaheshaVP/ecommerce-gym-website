@@ -24,7 +24,7 @@ const Footer = () => {
                 <FaShippingFast />
               </div>
               <div className="detail">
-                <h3>Free Delevary</h3>
+                <h3>Free Delivery</h3>
                 <p>you saved nearly 80% on your order</p>
               </div>
             </div>

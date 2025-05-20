@@ -44,7 +44,7 @@ const Shop = ({ shop, Filter, allcateFilter, addtocart }) => {
 
       <div className="shop">
         <h2>Shop</h2>
-        <p>Home . shop</p>
+        <p className="hp">Shoping Time</p>
         <div className="container">
           <div className="left_box">
             <div className="category">

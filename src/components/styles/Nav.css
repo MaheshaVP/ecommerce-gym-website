@@ -161,18 +161,18 @@
   font-size: 14px;
 }
 
-/* Mobile responsive */
-@media (max-width: 420px) {
+/* tob width  */
+@media (max-width: 768px) {
   .header .mid_header {
     flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
 
   .header .mid_header .logo img {
-    width: 150px;
+    width: 140px;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .header .mid_header .search_box {
@@ -183,7 +183,7 @@
   }
 
   .header .mid_header .search_box input {
-    width: 60%;
+    width: 65%;
     margin-left: 0;
   }
 
@@ -201,6 +201,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 10px 0;
   }
 
   .header .mid_header .user_profile .info {
@@ -212,6 +213,7 @@
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
+    text-align: center;
   }
 
   .header .last_header .nav {
@@ -222,13 +224,141 @@
   .header .last_header .nav ul {
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 
   .header .last_header .nav ul li {
-    margin: 5px 0;
+    margin: 8px 0;
   }
 
   .header .last_header .offer {
     margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .header .mid_header {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .header .mid_header .logo img {
+    width: 150px;
+    height: auto;
+    margin: 5px 0;
+  }
+
+  .header .mid_header .search_box {
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header .mid_header .search_box input {
+    width: 60%;
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .header .mid_header .search_box button {
+    width: 40px;
+    font-size: 14px;
+    margin-right: 0;
+  }
+
+  .header .mid_header .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px 0 0 10px;
+  }
+
+  .header .mid_header .user .icon {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .header .mid_header .user .btn button {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .header .mid_header .user_profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: -26px;
+    margin-left: 280px;
+  }
+
+  .header .mid_header .user_profile .icon {
+    font-size: 16px;
+  }
+
+  .header .mid_header .user_profile .info {
+    padding: 5px 0;
+    margin-left: 0;
+  }
+
+  .header .mid_header .user_profile .info h2 {
+    font-size: 12px;
+  }
+
+  .header .mid_header .user_profile .info p {
+    font-size: 10px;
+  }
+
+  .header .last_header {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Updated NAV as row in mobile */
+  .header .last_header .nav {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .header .last_header .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header .last_header .nav ul li {
+    margin: 5px 5px;
+  }
+
+  .header .last_header .nav ul li .link {
+    font-size: 14px;
+  }
+
+  /* Offer in next line */
+  .header .last_header .offer {
+    width: 160px;
+    text-align: center;
+    margin: 0 0 5px 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+    align-self: flex-end;
+  }
+
+  .header .last_header .offer p {
+    font-size: 12px;
+  }
+}
+
