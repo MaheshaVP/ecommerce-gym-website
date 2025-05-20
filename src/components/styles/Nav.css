@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-/* mid header  */
+/* mid header */
 .header .mid_header {
   display: flex;
   padding: 20px 40px;
@@ -109,7 +109,6 @@
   font-size: 14px;
 }
 
-
 /* last header */
 .header .last_header {
   width: 100%;
@@ -161,89 +160,7 @@
   font-size: 14px;
 }
 
-/* tob width  */
-@media (max-width: 768px) {
-  .header .mid_header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 15px;
-  }
-
-  .header .mid_header .logo img {
-    width: 140px;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .header .mid_header .search_box {
-    margin: 5px 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .header .mid_header .search_box input {
-    width: 65%;
-    margin-left: 0;
-  }
-
-  .header .mid_header .search_box button {
-    margin-right: 0;
-  }
-
-  .header .mid_header .user {
-    margin-top: 5px;
-    justify-content: flex-start;
-    margin-right: 40px;
-    font-size: 10px;
-  }
-
-  .header .mid_header .user_profile {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    margin-top: -25px;
-    margin-left: 240px;
-    font-size: 8px;
-  }
-
-  .header .mid_header .user_profile .info {
-    margin-left: 0;
-    padding: 5px 0;
-  }
-
-  .header .last_header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  .header .last_header .nav {
-    margin: 10px 0;
-    margin-left: 0;
-  }
-
-  .header .last_header .nav ul {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-
-  .header .last_header .nav ul li {
-    margin: 8px 0;
-  }
-
-  .header .last_header .offer {
-    margin: 5px 10px;
-    padding: 10px 15px;
-    font-size: 14px;
-    align-self: flex-end;
-  }
-}
-
-/* Mobile responsive for max-width 420px */
+/* Responsive styles ONLY for screens 420px and below */
 @media (max-width: 420px) {
   .header .mid_header {
     flex-direction: column;
@@ -287,12 +204,12 @@
   }
 
   .header .mid_header .user .icon {
-    font-size: 10px;
+    font-size: 14px;
     margin-left: 15px;
   }
 
   .header .mid_header .user .btn button {
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 0;
   }
 
@@ -300,12 +217,12 @@
     display: flex;
     flex-direction: row;
     justify-content: end;
-    margin-top: -24px;
+    margin-top: -22px;
     margin-left: 250px;
   }
 
   .header .mid_header .user_profile .icon {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .header .mid_header .user_profile .info {
@@ -314,11 +231,11 @@
   }
 
   .header .mid_header .user_profile .info h2 {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .header .mid_header .user_profile .info p {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .header .last_header {
@@ -338,15 +255,14 @@
   .header .last_header .nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-    gap: 4px;
+    justify-content: space-between;
+    gap: 2px;
     padding: 0;
     margin: 0;
   }
 
   .header .last_header .nav ul li {
-    margin: 4px 4px;
+    margin: 2px 2px;
   }
 
   .header .last_header .nav ul li .link {
@@ -366,5 +282,3 @@
     font-size: 11px;
   }
 }
-
-
