@@ -165,6 +165,7 @@ const Home = ({ addtocart }) => {
           <div className="right_box">
             <div className="top">
               <img
+                id="image3"
                 src="../ecommerce-gym-website/images//multiple-home-banner3.jpg"
                 alt="Banner"
                 width={400}
