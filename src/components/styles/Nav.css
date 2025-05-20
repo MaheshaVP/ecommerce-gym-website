@@ -176,7 +176,7 @@
   }
 
   .header .mid_header .search_box {
-    margin: 10px 0;
+    margin: 5px 0;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -192,16 +192,19 @@
   }
 
   .header .mid_header .user {
-    margin: 10px 0;
-    justify-content: center;
-    width: 100%;
+    margin-top: 5px;
+    justify-content: flex-start;
+    margin-right: 40px;
+    font-size: 12px;
   }
 
   .header .mid_header .user_profile {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    margin: 10px 0;
+    margin-top: -22px;
+    margin-left: 200px;
+    font-size: 10px;
   }
 
   .header .mid_header .user_profile .info {
@@ -222,7 +225,7 @@
   }
 
   .header .last_header .nav ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 0;
   }
@@ -232,14 +235,16 @@
   }
 
   .header .last_header .offer {
-    margin: 10px 0;
+    margin: 5px 10px;
     padding: 10px 15px;
     font-size: 14px;
+    align-self: flex-end;
   }
 }
 
 /* Mobile responsive */
-@media (max-width: 480px) {
+/* Mobile responsive for max-width 420px */
+@media (max-width: 420px) {
   .header .mid_header {
     flex-direction: column;
     align-items: center;
@@ -247,7 +252,7 @@
   }
 
   .header .mid_header .logo img {
-    width: 150px;
+    width: 130px;
     height: auto;
     margin: 5px 0;
   }
@@ -261,14 +266,14 @@
   }
 
   .header .mid_header .search_box input {
-    width: 60%;
-    font-size: 14px;
+    width: 58%;
+    font-size: 13px;
     margin-left: 0;
   }
 
   .header .mid_header .search_box button {
-    width: 40px;
-    font-size: 14px;
+    width: 38px;
+    font-size: 13px;
     margin-right: 0;
   }
 
@@ -278,16 +283,16 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0px 0 0 10px;
+    margin: 5px 0;
   }
 
   .header .mid_header .user .icon {
-    font-size: 14px;
-    margin-left: 20px;
+    font-size: 13px;
+    margin-left: 15px;
   }
 
   .header .mid_header .user .btn button {
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 0;
   }
 
@@ -295,25 +300,25 @@
     display: flex;
     flex-direction: row;
     justify-content: end;
-    margin-top: -26px;
-    margin-left: 280px;
+    margin-top: -24px;
+    margin-left: 250px;
   }
 
   .header .mid_header .user_profile .icon {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .header .mid_header .user_profile .info {
-    padding: 5px 0;
+    padding: 4px 0;
     margin-left: 0;
   }
 
   .header .mid_header .user_profile .info h2 {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .header .mid_header .user_profile .info p {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .header .last_header {
@@ -323,7 +328,6 @@
     align-items: center;
   }
 
-  /* Updated NAV as row in mobile */
   .header .last_header .nav {
     margin: 10px 0;
     width: 100%;
@@ -340,25 +344,25 @@
   }
 
   .header .last_header .nav ul li {
-    margin: 5px 5px;
+    margin: 4px 4px;
   }
 
   .header .last_header .nav ul li .link {
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  /* Offer in next line */
   .header .last_header .offer {
-    width: 160px;
+    width: 150px;
     text-align: center;
     margin: 0 0 5px 0;
-    padding: 5px 5px;
+    padding: 4px 4px;
     border-radius: 5px;
     align-self: flex-end;
   }
 
   .header .last_header .offer p {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
+
 

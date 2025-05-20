@@ -126,7 +126,7 @@
 }
 
 /* responsive for mobile */
-@media (max-width: 480px) {
+@media (max-width: 420px) {
     .contact {
         padding: 10px 20px;
     }
