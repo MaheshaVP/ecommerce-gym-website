@@ -5,6 +5,7 @@ import Shop from "./Shop";
 import Cart from "./Cart";
 import About from "./About";
 import Contact from "./Contact";
+import NotFound from "./NotFound"; // Make sure the path is correct
 
 const Rout = ({ shop, Filter, allcateFilter, addtocart, cart, setCart }) => {
   return (
@@ -24,6 +25,7 @@ const Rout = ({ shop, Filter, allcateFilter, addtocart, cart, setCart }) => {
       />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} /> {/* This will catch all undefined routes */}
     </Routes>
   );
 };
